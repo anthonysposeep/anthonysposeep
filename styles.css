@@ -1,0 +1,3 @@
+body { margin: 0; background: #11100f; color: #efe9df; font-family: "Times New Roman", Times, serif; }
+a { color: inherit; text-decoration: none; }
+.shell { width: min(calc(100% - 2rem), 1160px); margin: 0 auto; }
