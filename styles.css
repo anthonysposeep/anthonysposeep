@@ -23,3 +23,9 @@ h1 { font-size: clamp(4.5rem,10vw,8rem); line-height: .85; font-weight: 400; mar
 .feature-card h3 { font-size: clamp(2rem,3vw,3.4rem); font-weight: 400; margin-top: 0; }
 .quiet { color: #9f9181; font-size: 1rem; }
 .rule { height: 1px; background: #3a332d; margin: 2rem 0; }
+.site-footer { border-top: 1px solid #3a332d; padding: 2rem 0; color: #9f9181; font-size: .9rem; }
+.footer-wrap { display: flex; justify-content: space-between; gap: 1rem; }
+.skip-link { position: absolute; left: -9999px; }
+.skip-link:focus { left: 1rem; top: 1rem; background: #efe9df; color: #11100f; padding: .6rem .8rem; z-index: 100; }
+@media (max-width: 800px) { .hero,.two-col { grid-template-columns: 1fr; } .hero { min-height: auto; padding: 4rem 0 6rem; } .section { padding: 5rem 0; } }
+@media (max-width: 560px) { .nav { gap: .8rem; font-size: .85rem; } .nav a:nth-child(2),.nav a:nth-child(3) { display: none; } .footer-wrap { flex-direction: column; } }
