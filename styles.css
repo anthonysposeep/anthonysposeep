@@ -1,3 +1,12 @@
 body { margin: 0; background: #11100f; color: #efe9df; font-family: "Times New Roman", Times, serif; }
 a { color: inherit; text-decoration: none; }
 .shell { width: min(calc(100% - 2rem), 1160px); margin: 0 auto; }
+.site-header { border-bottom: 1px solid #3a332d; }
+.nav-wrap { min-height: 72px; display: flex; align-items: center; justify-content: space-between; }
+.nav { display: flex; gap: 1.25rem; }
+.hero { min-height: 75vh; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; padding: 5rem 0; }
+.eyebrow { color: #b47b45; text-transform: uppercase; letter-spacing: .16em; }
+h1 { font-size: 6rem; line-height: .85; font-weight: 400; margin: 0 0 2rem; }
+.cover-stage { display: grid; place-items: center; }
+.book-cover { width: 360px; max-width: 80vw; aspect-ratio: 2/3; background: #171412; border: 1px solid #3a332d; padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between; }
+.cover-title { font-size: 3.5rem; line-height: .9; }
