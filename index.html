@@ -22,6 +22,7 @@
         <a href="#work">Work</a>
         <a href="#about">About</a>
         <a href="#publications">Publications</a>
+        <a href="#beta-readers">Beta Readers</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -89,14 +90,28 @@
       </div>
     </section>
 
-    <section class="section contact-section" id="contact">
+    <section class="section" id="beta-readers">
       <div class="shell two-col">
         <div>
           <p class="section-number">04</p>
+          <h2>Beta Readers</h2>
+        </div>
+        <div class="prose">
+          <p>Interested in beta reading upcoming work? Send Anthony an email with a little about yourself and what you enjoy reading.</p>
+          <a class="contact-button email-link" href="#" data-subject="Beta Reader Request">Ask to Beta Read <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="shell two-col">
+        <div>
+          <p class="section-number">05</p>
           <h2>Contact</h2>
         </div>
         <div class="prose">
-          <p>For readings, review copies, interviews, and literary correspondence, professional contact information will be added here soon.</p>
+          <p>For readings, review copies, interviews, literary correspondence, or other professional inquiries, get in touch by email.</p>
+          <a class="contact-button email-link" href="#" data-subject="Website Inquiry">Email Anthony <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </section>
@@ -108,5 +123,14 @@
       <a href="#top">Back to top ↑</a>
     </div>
   </footer>
+
+  <script>
+    const addressCodes = [97,110,116,104,111,110,121,115,112,111,115,101,101,112,64,103,109,97,105,108,46,99,111,109];
+    const emailAddress = String.fromCharCode(...addressCodes);
+    document.querySelectorAll('.email-link').forEach((link) => {
+      const subject = encodeURIComponent(link.dataset.subject || 'Website Inquiry');
+      link.href = `mailto:${emailAddress}?subject=${subject}`;
+    });
+  </script>
 </body>
 </html>
