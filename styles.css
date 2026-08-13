@@ -23,6 +23,8 @@ h1 { font-size: clamp(4.5rem,10vw,8rem); line-height: .85; font-weight: 400; mar
 .feature-card h3 { font-size: clamp(2rem,3vw,3.4rem); font-weight: 400; margin-top: 0; }
 .quiet { color: #9f9181; font-size: 1rem; }
 .rule { height: 1px; background: #3a332d; margin: 2rem 0; }
+.contact-button { display: inline-flex; align-items: center; gap: .65rem; margin-top: 1rem; padding: .85rem 1.15rem; border: 1px solid #b47b45; color: #efe9df; text-transform: uppercase; letter-spacing: .1em; font-size: .82rem; transition: background .2s ease, color .2s ease; }
+.contact-button:hover,.contact-button:focus-visible { background: #b47b45; color: #11100f; outline: none; }
 .site-footer { border-top: 1px solid #3a332d; padding: 2rem 0; color: #9f9181; font-size: .9rem; }
 .footer-wrap { display: flex; justify-content: space-between; gap: 1rem; }
 .skip-link { position: absolute; left: -9999px; }
