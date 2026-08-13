@@ -21,6 +21,10 @@ h1 { font-size: clamp(4.5rem,10vw,8rem); line-height: .85; font-weight: 400; mar
 .section h2 { font-size: clamp(2.8rem,5vw,5rem); line-height: 1; font-weight: 400; margin: 0; }
 .feature-card,.prose { max-width: 46rem; color: #ddd2c4; font-size: 1.2rem; }
 .feature-card h3 { font-size: clamp(2rem,3vw,3.4rem); font-weight: 400; margin-top: 0; }
+.about-content { display: grid; grid-template-columns: minmax(180px, 260px) 1fr; gap: 2rem; align-items: start; }
+.about-cat { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: center 38%; display: block; border: 1px solid #3a332d; }
+.about-content .prose { max-width: 34rem; }
+.about-content .prose p:first-child { margin-top: 0; }
 .quiet { color: #9f9181; font-size: 1rem; }
 .rule { height: 1px; background: #3a332d; margin: 2rem 0; }
 .contact-button { display: inline-flex; align-items: center; gap: .65rem; margin-top: 1rem; padding: .85rem 1.15rem; border: 1px solid #b47b45; color: #efe9df; text-transform: uppercase; letter-spacing: .1em; font-size: .82rem; transition: background .2s ease, color .2s ease; }
@@ -29,5 +33,5 @@ h1 { font-size: clamp(4.5rem,10vw,8rem); line-height: .85; font-weight: 400; mar
 .footer-wrap { display: flex; justify-content: space-between; gap: 1rem; }
 .skip-link { position: absolute; left: -9999px; }
 .skip-link:focus { left: 1rem; top: 1rem; background: #efe9df; color: #11100f; padding: .6rem .8rem; z-index: 100; }
-@media (max-width: 800px) { .hero,.two-col { grid-template-columns: 1fr; } .hero { min-height: auto; padding: 4rem 0 6rem; } .section { padding: 5rem 0; } }
-@media (max-width: 560px) { .nav { gap: .8rem; font-size: .85rem; } .nav a:nth-child(2),.nav a:nth-child(3) { display: none; } .footer-wrap { flex-direction: column; } }
+@media (max-width: 800px) { .hero,.two-col { grid-template-columns: 1fr; } .hero { min-height: auto; padding: 4rem 0 6rem; } .section { padding: 5rem 0; } .about-content { grid-template-columns: minmax(150px, 220px) 1fr; } }
+@media (max-width: 560px) { .nav { gap: .8rem; font-size: .85rem; } .nav a:nth-child(2),.nav a:nth-child(3) { display: none; } .about-content { grid-template-columns: 1fr; } .about-cat { max-width: 320px; aspect-ratio: 4/5; } .footer-wrap { flex-direction: column; } }
