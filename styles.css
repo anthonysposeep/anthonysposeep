@@ -1,12 +1,25 @@
-body { margin: 0; background: #11100f; color: #efe9df; font-family: "Times New Roman", Times, serif; }
+body { margin: 0; background: #11100f; color: #efe9df; font-family: "Times New Roman", Times, serif; line-height: 1.55; }
 a { color: inherit; text-decoration: none; }
 .shell { width: min(calc(100% - 2rem), 1160px); margin: 0 auto; }
-.site-header { border-bottom: 1px solid #3a332d; }
+.site-header { position: sticky; top: 0; z-index: 10; background: #11100f; border-bottom: 1px solid #3a332d; }
 .nav-wrap { min-height: 72px; display: flex; align-items: center; justify-content: space-between; }
-.nav { display: flex; gap: 1.25rem; }
+.wordmark { text-transform: uppercase; letter-spacing: .08em; }
+.nav { display: flex; gap: 1.25rem; color: #d8cec0; }
 .hero { min-height: 75vh; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; padding: 5rem 0; }
-.eyebrow { color: #b47b45; text-transform: uppercase; letter-spacing: .16em; }
-h1 { font-size: 6rem; line-height: .85; font-weight: 400; margin: 0 0 2rem; }
+.eyebrow { color: #b47b45; text-transform: uppercase; letter-spacing: .16em; font-size: .8rem; }
+h1 { font-size: clamp(4.5rem,10vw,8rem); line-height: .85; font-weight: 400; margin: 0 0 2rem; }
+.hero-line { font-size: 1.5rem; margin-bottom: .4rem; }
+.hero-intro { color: #cec2b3; max-width: 34rem; font-size: 1.1rem; margin-bottom: 2rem; }
+.text-link { border-bottom: 1px solid #b47b45; padding-bottom: .2rem; }
 .cover-stage { display: grid; place-items: center; }
-.book-cover { width: 360px; max-width: 80vw; aspect-ratio: 2/3; background: #171412; border: 1px solid #3a332d; padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between; }
-.cover-title { font-size: 3.5rem; line-height: .9; }
+.book-cover { width: 360px; max-width: 80vw; aspect-ratio: 2/3; background: linear-gradient(145deg,#25201c,#090909 50%,#1b1714); border: 1px solid #3a332d; padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 30px 70px #000; }
+.cover-kicker,.cover-author { text-transform: uppercase; letter-spacing: .18em; font-size: .75rem; color: #d8c8b5; }
+.cover-title { font-size: clamp(2.7rem,5vw,4.2rem); line-height: .9; }
+.section { border-top: 1px solid #3a332d; padding: 6rem 0; }
+.two-col { display: grid; grid-template-columns: .7fr 1.3fr; gap: 4rem; }
+.section-number { color: #b47b45; letter-spacing: .14em; font-size: .8rem; }
+.section h2 { font-size: clamp(2.8rem,5vw,5rem); line-height: 1; font-weight: 400; margin: 0; }
+.feature-card,.prose { max-width: 46rem; color: #ddd2c4; font-size: 1.2rem; }
+.feature-card h3 { font-size: clamp(2rem,3vw,3.4rem); font-weight: 400; margin-top: 0; }
+.quiet { color: #9f9181; font-size: 1rem; }
+.rule { height: 1px; background: #3a332d; margin: 2rem 0; }
