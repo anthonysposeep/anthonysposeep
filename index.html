@@ -22,6 +22,7 @@
         <a href="#work">Work</a>
         <a href="#about">About</a>
         <a href="#publications">Publications</a>
+        <a href="reading.html">Reading</a>
         <a href="#beta-readers">Beta Readers</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -37,7 +38,6 @@
         <p class="hero-intro">Writing about the quiet ways people survive what changes them.</p>
         <a class="text-link" href="#work">Explore the work <span aria-hidden="true">→</span></a>
       </div>
-
       <div class="cover-stage" aria-label="Murder of Your Memory, debut poetry collection">
         <div class="book-cover">
           <div class="cover-noise"></div>
@@ -48,93 +48,13 @@
       </div>
     </section>
 
-    <section class="section work-section" id="work">
-      <div class="shell two-col">
-        <div>
-          <p class="section-number">01</p>
-          <h2>Work</h2>
-        </div>
-        <article class="feature-card">
-          <p class="eyebrow">Forthcoming debut poetry collection</p>
-          <h3>Murder of Your Memory</h3>
-          <p>A poetry collection centered on love, grief, memory, faith, and what remains after a life changes shape.</p>
-          <p class="quiet">Publication details will be announced here.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="shell two-col">
-        <div>
-          <p class="section-number">02</p>
-          <h2>About</h2>
-        </div>
-        <div class="about-content">
-          <img class="about-cat" src="charlie.jpeg" alt="Charlie, Anthony Sposeep's cat, sitting outdoors on a fallen tree">
-          <div class="prose">
-            <p>Anthony Sposeep writes about love, grief, memory, faith, and the things people carry long after they should have put them down.</p>
-            <p>His debut collection, <em>Murder of Your Memory</em>, is forthcoming.</p>
-            <p>He lives in Texas with his cat, Charlie, who remains largely unimpressed by the whole thing.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="publications">
-      <div class="shell two-col">
-        <div>
-          <p class="section-number">03</p>
-          <h2>Publications</h2>
-        </div>
-        <div class="prose publications-copy">
-          <p>Journal publications and literary credits will be added here as they appear.</p>
-          <div class="rule"></div>
-          <p class="quiet">No unpublished poems are posted on this site.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="beta-readers">
-      <div class="shell two-col">
-        <div>
-          <p class="section-number">04</p>
-          <h2>Beta Readers</h2>
-        </div>
-        <div class="prose">
-          <p>Interested in beta reading upcoming work? Send Anthony an email with a little about yourself and what you enjoy reading.</p>
-          <a class="contact-button email-link" href="#" data-subject="Beta Reader Request">Ask to Beta Read <span aria-hidden="true">→</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact-section" id="contact">
-      <div class="shell two-col">
-        <div>
-          <p class="section-number">05</p>
-          <h2>Contact</h2>
-        </div>
-        <div class="prose">
-          <p>For readings, review copies, interviews, literary correspondence, or other professional inquiries, get in touch by email.</p>
-          <a class="contact-button email-link" href="#" data-subject="Website Inquiry">Email Anthony <span aria-hidden="true">→</span></a>
-        </div>
-      </div>
-    </section>
+    <section class="section work-section" id="work"><div class="shell two-col"><div><p class="section-number">01</p><h2>Work</h2></div><article class="feature-card"><p class="eyebrow">Forthcoming debut poetry collection</p><h3>Murder of Your Memory</h3><p>A poetry collection centered on love, grief, memory, faith, and what remains after a life changes shape.</p><p class="quiet">Publication details will be announced here.</p></article></div></section>
+    <section class="section" id="about"><div class="shell two-col"><div><p class="section-number">02</p><h2>About</h2></div><div class="about-content"><img class="about-cat" src="charlie.jpeg" alt="Charlie, Anthony Sposeep's cat, sitting outdoors on a fallen tree"><div class="prose"><p>Anthony Sposeep writes about love, grief, memory, faith, and the things people carry long after they should have put them down.</p><p>His debut collection, <em>Murder of Your Memory</em>, is forthcoming.</p><p>He lives in Texas with his cat, Charlie, who remains largely unimpressed by the whole thing.</p></div></div></div></section>
+    <section class="section" id="publications"><div class="shell two-col"><div><p class="section-number">03</p><h2>Publications</h2></div><div class="prose publications-copy"><p>Journal publications and literary credits will be added here as they appear.</p><div class="rule"></div><p class="quiet">No unpublished poems are posted on this site.</p></div></div></section>
+    <section class="section" id="beta-readers"><div class="shell two-col"><div><p class="section-number">04</p><h2>Beta Readers</h2></div><div class="prose"><p>Interested in beta reading upcoming work? Send Anthony an email with a little about yourself and what you enjoy reading.</p><a class="contact-button email-link" href="#" data-subject="Beta Reader Request">Ask to Beta Read <span aria-hidden="true">→</span></a></div></div></section>
+    <section class="section contact-section" id="contact"><div class="shell two-col"><div><p class="section-number">05</p><h2>Contact</h2></div><div class="prose"><p>For readings, review copies, interviews, literary correspondence, or other professional inquiries, get in touch by email.</p><a class="contact-button email-link" href="#" data-subject="Website Inquiry">Email Anthony <span aria-hidden="true">→</span></a></div></div></section>
   </main>
-
-  <footer class="site-footer">
-    <div class="shell footer-wrap">
-      <p>© 2026 Anthony Sposeep</p>
-      <a href="#top">Back to top ↑</a>
-    </div>
-  </footer>
-
-  <script>
-    const addressCodes = [97,110,116,104,111,110,121,115,112,111,115,101,101,112,64,103,109,97,105,108,46,99,111,109];
-    const emailAddress = String.fromCharCode(...addressCodes);
-    document.querySelectorAll('.email-link').forEach((link) => {
-      const subject = encodeURIComponent(link.dataset.subject || 'Website Inquiry');
-      link.href = `mailto:${emailAddress}?subject=${subject}`;
-    });
-  </script>
+  <footer class="site-footer"><div class="shell footer-wrap"><p>© 2026 Anthony Sposeep</p><a href="#top">Back to top ↑</a></div></footer>
+  <script>const addressCodes=[97,110,116,104,111,110,121,115,112,111,115,101,101,112,64,103,109,97,105,108,46,99,111,109];const emailAddress=String.fromCharCode(...addressCodes);document.querySelectorAll('.email-link').forEach((link)=>{const subject=encodeURIComponent(link.dataset.subject||'Website Inquiry');link.href=`mailto:${emailAddress}?subject=${subject}`;});</script>
 </body>
 </html>
